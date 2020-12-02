@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+/* *,
+*:before,
+*:after {
+  box-sizing: inherit;
+} */
+
+.flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* nav styles */
+
+header #home {
+  background-color: #022539;
+  height: 5.5rem;
+  border-bottom: 1px solid #fb991c;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 1% 2%;
+  font-size: 2rem;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header nav li a:hover {
+  color: #fb991c;
+}
+
+/* halfmoon animation */
+
+canvas {
+  background: rgb(0, 51, 102);
+  display: block;
+  position: absolute;
+  width: 100%;
+}
