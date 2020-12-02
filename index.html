@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Sofia Luna | Portfolio</title>
 </head>
 
@@ -24,10 +25,51 @@
         <div class="hero">
             <canvas id="canvas"></canvas>
         </div>
-
+        <div class="flex">
+            <div class="intro">
+                <h1>Hello, I am <span>Sofia Luna.</span></h1>
+                <p>I'm A Front End Developer</p>
+            </div>
+        </div>
     </header>
+    <main>
+        <section id="about">
+            <div class="spacer">
+                <h2>About</h2>
+                <div class="container">
+                    <div class="img-container">
+                        <img src="images/sofia-luna.jpg" alt="sofia luna">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skills-name">HTML</div>
+                            <div class="skills-bar">
+                                <div class="skills-per" per="90"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skills-name">CSS</div>
+                            <div class="skills-bar">
+                                <div class="skills-per" per="80"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skills-name">JavaScript</div>
+                            <div class="skills-bar">
+                                <div class="skills-per" per="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 <script src="canvas.js"></script>
+
 
 </html>

@@ -9,11 +9,22 @@ html {
   box-sizing: inherit;
 } */
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .flex {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.spacer {
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* nav styles */
@@ -22,6 +33,9 @@ header #home {
   background-color: #022539;
   height: 5.5rem;
   border-bottom: 1px solid #fb991c;
+  /* position: fixed;
+  z-index: 100;
+  width: 100%; */
 }
 
 header nav ul li {
@@ -36,15 +50,111 @@ header nav li a {
   color: #ffffff;
 }
 
-header nav li a:hover {
+header nav li a:hover,
+header .intro span {
   color: #fb991c;
 }
 
-/* halfmoon animation */
+header .intro {
+  color: #ffffff;
+  z-index: 1;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 14rem;
+}
+
+/* half-moon animation */
 
 canvas {
   background: rgb(0, 51, 102);
   display: block;
-  position: absolute;
-  width: 100%;
+  width: 100vw;
+  /* height: 100vh; */
 }
+
+/* about section */
+
+/* main #about {
+  background-color: #fbf3f1;
+} */
+
+#about h2 {
+  font-size: 4rem;
+  text-align: center;
+  color: #333;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+/* .img-container {
+  width: 50%;
+  height: 300px;
+  overflow: hidden;
+} */
+
+.img-container img {
+  width: 50%;
+  height: 0 auto;
+  border-radius: 50%;
+  border: 5px solid #fb991c;
+}
+
+.img-container p {
+  font-size: 1.8rem;
+}
+
+.skills {
+  font-size: 3rem;
+  width: 50%;
+  /* max-width: 600px; */
+  padding: 0 20px;
+}
+
+.skills-name {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skills-bar {
+  height: 20px;
+  background-color: #cacaca;
+  border-radius: 8px;
+}
+
+.skills-per {
+  height: 20px;
+  background-color: #fb991c;
+  border-radius: 8px;
+  width: 50%;
+}
+
+.skills-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+/* .skills-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+} */
+
+/* https://www.youtube.com/watch?v=xHuWmgV4O9Y */
